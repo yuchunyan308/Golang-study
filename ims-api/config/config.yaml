@@ -1,0 +1,15 @@
+app:
+  name: "IMS API"
+  port: 8080
+  mode: "debug"   # debug | release
+  jwt_secret: "ims-super-secret-key-2024"
+  jwt_expire_hours: 24
+
+database:
+  dsn: "./ims.db"
+  max_open_conns: 1
+  max_idle_conns: 1
+
+log:
+  level: "info"   # debug | info | warn | error
+  filename: "./logs/ims.log"
